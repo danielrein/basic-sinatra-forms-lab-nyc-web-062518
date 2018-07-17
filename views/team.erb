@@ -6,12 +6,12 @@
  </head>
  <body>
    <%= params %>
-   <p>Team Name:<%= params[:name] %></p>
-   <p>Coach:</p>
-  <p>Point Guard:</p>
-  <p>Shooting Guard:</p>
-  <p>Power Forward:</p>
-  <p>Small Forward:</p>
+   <p>Team Name: <%= params[:name] %></p>
+   <p>Coach: <%= params[:coach] %></p>
+  <p>Point Guard: <%= params[:pg] %></p>
+  <p>Shooting Guard: <%= params[:sg] %></p>
+  <p>Power Forward: <%= params[:pf] %></p>
+  <p>Small Forward: <%= params[:sf] %></p>
 
  <% params.each do |key, value| %>
  <p> <%= "#{key}: #{value}" %></p>
